@@ -34,7 +34,10 @@ This project implements a REST API using Django and Django REST framework that i
 
 ## Authentication
 
-The API uses token-based authentication. To retrieve a token, you'll need to create a user and then make a POST request to `api-token-auth/` with the username and password. You can use command `docker compose exec -it web ./manage.py init_admin` to obtain access token.
+The API uses JWT(Bearer) authentication. To retrieve a token, you'll need to create a user and then make a POST request to `api/token/` with the username and password. 
+OR
+
+You can use command `docker compose exec -it web ./manage.py init_admin` to obtain access token.
 
 ## Synchronization
 
